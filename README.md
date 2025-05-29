@@ -16,7 +16,8 @@ This guide explains how to:
 ### **Step 2: Download the Script**
 Run this command to download the script directly:  
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/ahmadrezawiki/Windows-online-script/releases/download/V1.0/Install-ChocoAndEssentials.ps1" -OutFile "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.ps1" -UseBasicParsing
+Invoke-WebRequest -Uri "https://github.com/ahmadrezawiki/Windows-online-script/releases/download/V1.0/Install-ChocoAndEssentials.ps1" -OutFile "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.ps1" -UseBasicParsing -ErrorAction SilentlyContinue
+cd "$env:USERPROFILE\Downloads"
 ```
 *(This saves the file to your **Downloads** folder.)*  
 
