@@ -3,7 +3,7 @@ An Online Script Based Github Tools Installer +:
 # **Guide: How to Download and Run the Script in PowerShell**
 
 This guide explains how to:  
-1️⃣ **Download the script** (`Install-ChocoAndEssentials.pst`) from GitHub Releases.  
+1️⃣ **Download the script** (`Install-ChocoAndEssentials.ps1`) from GitHub Releases.  
 2️⃣ **Run it in PowerShell** (recommended for better compatibility).  
 
 ---
@@ -16,14 +16,14 @@ This guide explains how to:
 ### **Step 2: Download the Script**
 Run this command to download the script directly:  
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/ahmadrezawiki/Windows-online-script/releases/download/V1.0/Install-ChocoAndEssentials.pst" -OutFile "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.pst"
+Invoke-WebRequest -Uri "https://github.com/ahmadrezawiki/Windows-online-script/releases/download/V1.0/Install-ChocoAndEssentials.pst" -OutFile "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.ps1"
 ```
 *(This saves the file to your **Downloads** folder.)*  
 
 ### **Step 3: Run the Script**
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force
-& "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.pst"
+& "$env:USERPROFILE\Downloads\Install-ChocoAndEssentials.ps1"
 ```
 - `Set-ExecutionPolicy Bypass` allows script execution (temporarily).  
 - `&` runs the script.  
@@ -34,7 +34,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 ### **Step 1: Download from GitHub Releases**
 1. Go to the **GitHub Releases** page:  
    → [https://github.com/ahmadrezawiki/Windows-online-script/releases](https://github.com/ahmadrezawiki/Windows-online-script/releases)  
-2. Under **"Assets"**, click **`Install-ChocoAndEssentials.pst`** to download it.  
+2. Under **"Assets"**, click **`Install-ChocoAndEssentials.ps1`** to download it.  
 
 ### **Step 2: Open PowerShell as Admin**
 (Run as Administrator, as shown in **Method 1**.)  
@@ -46,7 +46,7 @@ cd "$env:USERPROFILE\Downloads"
 
 ### **Step 4: Run the Script**
 ```powershell
-.\Install-ChocoAndEssentials.pst
+.\Install-ChocoAndEssentials.ps1
 ```
 *(If blocked, first run `Set-ExecutionPolicy Bypass -Scope Process -Force`.)*  
 
