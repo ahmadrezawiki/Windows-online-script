@@ -10,8 +10,7 @@ This guide explains how to:
 
 ## **Method 1: Direct Download & Run (Recommended)**
 ### **Step 1: Open PowerShell as Admin**
-- Press `Win + X` and select **"Windows Terminal (Admin)"** or **"PowerShell (Admin)"**.  
-- **OR** search for `PowerShell`, right-click, and choose **"Run as administrator"**.  
+- search for `PowerShell`, right-click, and choose **"Run as administrator"**.  
 
 ### **Step 2: Download the Script**
 Run this command to download the script directly:  
